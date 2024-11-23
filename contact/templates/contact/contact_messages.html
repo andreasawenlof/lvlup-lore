@@ -12,10 +12,8 @@
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Email</th>
                         <th scope="col">Subject</th>
+                        <th scope="col">Email</th>
                         <th scope="col">Message</th>
                         <th scope="col">Date</th>
                         <th scope="col">Actions</th>
@@ -29,7 +27,13 @@
                                 
                                 
                                 
+                                
+                                
+                                
                                 table-success
+
+
+
 
 
 
@@ -41,7 +45,13 @@
                                 
                                 
                                 
+                                
+                                
+                                
                                 table-warning
+
+
+
 
 
 
@@ -50,11 +60,10 @@
                             {% endif %}"
                             data-href="{% url 'contact_message_detail' contact.pk %}">
                             <th scope="row">{{ contact.id }}</th>
-                            <td>{{ contact.name }}</td>
-                            <td>{{ contact.email }}</td>
                             <td>
                                 <a href="{% url 'contact_message_detail' contact.pk %}">{{ contact.subject }}</a>
                             </td>
+                            <td>{{ contact.email }}</td>
                             <td>
                                 <a href="{% url 'contact_message_detail' contact.pk %}">{{ contact.message }}</a>
                             </td>
